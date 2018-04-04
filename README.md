@@ -1,3 +1,4 @@
 # CLIHandler
 
-A lightweight wrapper around SPM's ArgumentParser.
+A high-level CLI handler.
+
