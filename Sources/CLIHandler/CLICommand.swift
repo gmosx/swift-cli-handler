@@ -38,10 +38,18 @@ open class CLICommand {
                 print("Unrecognized command '\(subcommandName)'")
             }
         } else {
+            willRun()
             run(result: result)
         }
     }
 
+    /// Initialize resources only needed if the command is executed
+    open func willRun() {
+        return
+    }
+
+    /// Execute the logic of the command
     open func run(result: ArgumentParser.Result) {
+        return
     }
 }
